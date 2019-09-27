@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+.a{
+margin:50px;
+width:200px;
+height:200px;
+border: 1px solid blue;
+background-color:yellow;
+}
+.b{
+width:100px;
+height:100px;
+background-color:yellow;
+}
+.b:hover{
+background-color:gray;
+
+}
+.c{
+position: absolute;
+left: 50px;
+top: 50px;
+margin:50px;
+width:300px;
+height:300px;
+z-index:3;
+border: 1px solid blue;
+background-color:White;
+visibility: hidden;
+}
+</style>
+</head>
+<body>
+<div class = "a" id = "1"></div>
+<div class = "b" id = "2"></div>
+<div class = "c" id = "3"></div>
+</div>
+<script>
+document.getElementById("2").addEventListener("mouseover", ()=>{document.getElementById("3").style.visibility = "visible"});
+document.getElementById("2").addEventListener("mouseout", ()=>{document.getElementById("3").style.visibility = "hidden"});
+</script>
+</body>
+</html>
