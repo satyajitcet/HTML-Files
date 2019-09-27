@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+.bstl{
+background-color: black;
+}
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid green;
+}
+.mstl{
+position: relative;
+left:60px;
+top:-70px;
+width:50px;
+height:50px;
+}
+.mstl:hover{
+position: relative;
+animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  from {left: 60px;}
+  to {left: 1200px;}
+}
+</style>
+<body class = "bstl">
+<div class = "arrow-right"></div>
+<div class = "mstl">
+<img src="https://cdn2.vectorstock.com/i/1000x1000/01/01/moving-red-fiery-gun-bullet-shot-on-black-vector-15130101.jpg" 
+alt="gun" width="50px" height="50px">
+</div>
+</body>
+</html>
